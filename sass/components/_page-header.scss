@@ -1,0 +1,137 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 453px;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-page-header-svg {
+  padding-top: 10px;
+  padding-right: 15px;
+  width: 40px;
+  height: 40px;
+}
+.site-nav {
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.logo {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* .header-nav .mail-link,
+.header-nav .tel-link {
+  margin-right: 10px; */
+.address {
+  padding: 0px;
+  margin: 0;
+}
+.nav-address .icon-mail-svg {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  transition: 250ms $defaul-cubic-bezier;
+}
+
+// .address-text:hover .icon-mail-svg,
+// .address-text:focus .icon-mail-svg {
+//   stroke-width: 2px;
+//   fill: $accent-color;
+// }
+
+.icon-mail-svg {
+  .address-text:hover &,
+  .address-text:focus & {
+    stroke-width: 2px;
+    fill: $accent-color;
+  }
+}
+.icon-tel-svg {
+  margin-right: 10px;
+  width: 10px;
+  height: 15px;
+  transition: 250ms $defaul-cubic-bezier;
+}
+
+.icon-tel-svg {
+  .address-text:hover &,
+  .address-text:focus & {
+    stroke-width: 2px;
+    fill: $accent-color;
+  }
+}
+
+.icon-tel-svg {
+  .address-text:hover & {
+    stroke-width: 2px;
+    fill: $accent-color;
+  }
+}
+
+.menu-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.icon-close-menu {
+  display: none;
+}
+
+.site-nav-text,
+.address-text {
+  transition: 250ms $defaul-cubic-bezier;
+}
+
+.site-nav-list-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.site-nav-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.current {
+  position: relative;
+}
+.site-nav-text.current::after {
+  display: block;
+  position: absolute;
+  top: 20px;
+  content: "";
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+
+.address-text {
+  text-align: center;
+  font-style: normal;
+  font-family: Roboto;
+  color: $primary-text-color;
+}
+.site-nav-text {
+  color: $title-text-color;
+}
+.site-nav {
+  text-align: center;
+}
+.address-item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}

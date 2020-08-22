@@ -1,0 +1,28 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+
+    background-color: teal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: tomato;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    background-color: grey;
+    width: 1200px;
+  }
+}
