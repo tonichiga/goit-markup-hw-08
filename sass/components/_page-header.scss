@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 15px;
 }
 .menu-wrapper {
   position: absolute;
@@ -11,12 +12,18 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.icon-page-header-svg {
-  padding-top: 10px;
-  padding-right: 15px;
-  width: 40px;
-  height: 40px;
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.icon-page-header-svg {
+}
+
 .site-nav {
   padding: 0;
   margin-top: 0px;
@@ -78,12 +85,6 @@
   }
 }
 
-.menu-btn {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 .icon-close-menu {
   display: none;
 }
