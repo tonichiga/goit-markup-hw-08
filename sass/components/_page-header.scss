@@ -1,44 +1,9 @@
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 15px;
-}
-.menu-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 453px;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.menu-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-
-  background-color: transparent;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.icon-page-header-svg {
-}
-
-.site-nav {
-  padding: 0;
-  margin-top: 0px;
-  margin-bottom: 60px;
-}
-
 .logo {
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-/* .header-nav .mail-link,
-.header-nav .tel-link {
-  margin-right: 10px; */
 .address {
   padding: 0px;
   margin: 0;
@@ -49,12 +14,6 @@
   margin-right: 10px;
   transition: 250ms $defaul-cubic-bezier;
 }
-
-// .address-text:hover .icon-mail-svg,
-// .address-text:focus .icon-mail-svg {
-//   stroke-width: 2px;
-//   fill: $accent-color;
-// }
 
 .icon-mail-svg {
   .address-text:hover &,
@@ -69,7 +28,6 @@
   height: 15px;
   transition: 250ms $defaul-cubic-bezier;
 }
-
 .icon-tel-svg {
   .address-text:hover &,
   .address-text:focus & {
@@ -85,28 +43,11 @@
   }
 }
 
-.icon-close-menu {
-  display: none;
-}
-
 .site-nav-text,
 .address-text {
   transition: 250ms $defaul-cubic-bezier;
 }
 
-.site-nav-list-item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-.site-nav-list-item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.current {
-  position: relative;
-}
 .site-nav-text.current::after {
   display: block;
   position: absolute;
@@ -117,7 +58,6 @@
   border-radius: 2px;
   background-color: $accent-color;
 }
-
 .address-text {
   text-align: center;
   font-style: normal;
@@ -130,9 +70,104 @@
 .site-nav {
   text-align: center;
 }
-.address-item-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
+
+@media screen and (max-width: 767px) {
+  .site {
+    position: fixed;
+    min-width: 480px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background-color: #fff;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    border-bottom: 1px solid #ececec;
+  }
+  .address-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .menu-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 53px;
+    height: 393px;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%);
+    transition: opacity 250ms $defaul-cubic-bezier;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+    z-index: 100;
+
+    background-color: transparent;
+  }
+  .site-nav {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+  .site-nav-list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .site-nav-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .header-nav {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .menu-btn.is-open .icon-menu {
+    display: none;
+  }
+  .menu-btn .icon-menu {
+    display: block;
+  }
+  .menu-btn.is-open .icon-close-menu {
+    display: block;
+  }
+  .menu-btn .icon-close-menu {
+    display: none;
+  }
+  .icon-page-header-svg {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    transition: fill 250ms $defaul-cubic-bezier;
+  }
+  .icon-page-header-svg {
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+  .is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.current {
+  color: $accent-color;
+  position: relative;
 }
