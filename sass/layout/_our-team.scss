@@ -75,3 +75,20 @@
   line-height: 19px;
   letter-spacing: 0.03em;
 }
+.icon-container-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-container-link:hover,
+.icon-container-link:focus {
+  background-color: #2196f3;
+}
+.icon-container-link:hover .our-team-social-svg,
+.icon-container-link:focus .our-team-social-svg {
+  fill: #fff;
+}

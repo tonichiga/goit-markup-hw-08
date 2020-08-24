@@ -1,1 +1,78 @@
-    
+%footer-font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+.footer-address {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.footer-main .link.logo {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.footer-list-link:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer {
+  margin: 0;
+  padding: 0;
+}
+.footer .footer-mailto-link,
+.footer .footer-tel-link,
+.footer .footer-address-link {
+  @extend %footer-font;
+  transition: 250ms $defaul-cubic-bezier;
+}
+
+.footer .footer-address-link {
+  color: $second-text-color;
+}
+.footer .footer-mailto-link,
+.footer .footer-tel-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer .footer-mailto-link,
+.footer .footer-tel-link {
+  @extend %footer-font;
+}
+
+.footer-mailto-link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-tel-link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-icon-social-svg {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: $second-text-color;
+}
+
+.icon-container-link.footer-social {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
