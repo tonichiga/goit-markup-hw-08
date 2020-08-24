@@ -10,3 +10,62 @@
   text-transform: uppercase;
   color: $second-text-color;
 }
+.follow-us-container {
+  display: flex;
+  flex-direction: column;
+}
+.follow-us-form {
+  display: block;
+  margin-bottom: 20px;
+  max-width: 450px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+  color: $second-text-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  transition: border 250ms $defaul-cubic-bezier;
+}
+.follow-us-form {
+  padding-left: 16px;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+.follow-us-btn-container {
+  margin: 0 auto;
+}
+.follow-us-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.5;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  color: $second-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.follow-us-btn {
+  &::after {
+    content: "";
+    background-image: url(../image/icon-send.svg);
+    background-repeat: no-repeat;
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+}
