@@ -118,9 +118,11 @@
           <h2 class="visually-hidden">О нас</h2>
           <ul class="about-us-item list">
             <li class="about-us-item-list">
-              <svg class="about-us-icon-svg">
-                <use href="./image/sprite.svg#icon-about-us-1"></use>
-              </svg>
+              <div class="about-us-container-svg">
+                <svg class="about-us-icon-svg">
+                  <use href="./image/sprite.svg#icon-about-us-1"></use>
+                </svg>
+              </div>
 
               <h3 class="about-us-title">внимание к деталям</h3>
               <p class="about-us-text">
@@ -130,9 +132,11 @@
             </li>
 
             <li class="about-us-item-list">
-              <svg class="about-us-icon-svg">
-                <use href="./image/sprite.svg#icon-about-us-2"></use>
-              </svg>
+              <div class="about-us-container-svg">
+                <svg class="about-us-icon-svg">
+                  <use href="./image/sprite.svg#icon-about-us-2"></use>
+                </svg>
+              </div>
               <h3 class="about-us-title">пунктуальность</h3>
               <p class="about-us-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -141,9 +145,11 @@
             </li>
 
             <li class="about-us-item-list">
-              <svg class="about-us-icon-svg">
-                <use href="./image/sprite.svg#icon-about-us-3"></use>
-              </svg>
+              <div class="about-us-container-svg">
+                <svg class="about-us-icon-svg">
+                  <use href="./image/sprite.svg#icon-about-us-3"></use>
+                </svg>
+              </div>
               <h3 class="about-us-title">планирование</h3>
               <p class="about-us-text">
                 Равным образом консультация с широким активом в значительной
@@ -152,9 +158,11 @@
             </li>
 
             <li class="about-us-item-list">
-              <svg class="about-us-icon-svg">
-                <use href="./image/sprite.svg#icon-about-us-4"></use>
-              </svg>
+              <div class="about-us-container-svg">
+                <svg class="about-us-icon-svg">
+                  <use href="./image/sprite.svg#icon-about-us-4"></use>
+                </svg>
+              </div>
               <h3 class="about-us-title">современные технологии</h3>
               <p class="about-us-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -172,39 +180,45 @@
 
           <ul class="features-item list">
             <li class="features-item-list features-container">
-              <img
-                src="./image/what-we-do/what-we-do-1.jpg"
-                alt="десктопные приложения"
-                width="450"
-                height="294"
-              />
-              <p class="features-text">десктопные приложения</p>
+              <div class="features-item-container">
+                <img
+                  class="feature-img"
+                  src="./image/what-we-do/what-we-do-1.jpg"
+                  alt="десктопные приложения"
+                  height="294"
+                />
+                <p class="features-text">десктопные приложения</p>
+              </div>
             </li>
 
             <li class="features-item-list features-container">
-              <img
-                src="./image/what-we-do/what-we-do-2.jpg"
-                alt="мобильные приложения"
-                width="450"
-                height="294"
-              />
-              <p class="features-text">мобильные приложения</p>
+              <div class="features-item-container">
+                <img
+                  class="feature-img"
+                  src="./image/what-we-do/what-we-do-2.jpg"
+                  alt="мобильные приложения"
+                  height="294"
+                />
+                <p class="features-text">мобильные приложения</p>
+              </div>
             </li>
             <li class="features-item-list features-container">
-              <img
-                src="./image/what-we-do/what-we-do-3.jpg"
-                alt="дизайнерские решения"
-                width="450"
-                height="294"
-              />
-              <p class="features-text">дизайнерские решения</p>
+              <div class="features-item-container">
+                <img
+                  class="feature-img"
+                  src="./image/what-we-do/what-we-do-3.jpg"
+                  alt="дизайнерские решения"
+                  height="294"
+                />
+                <p class="features-text">дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Наша команда -->
-      <!-- <section class="our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-item list">
@@ -227,21 +241,21 @@
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Твиттер">
                     <svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Фейсбук">
                     <svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Линкедин">
                     <svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-linkedin"></use>
@@ -263,28 +277,28 @@
               <p lang="en" class="our-team-text">Frontend Developer</p>
 
               <ul class="our-team list social">
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Инстаграм">
                     <svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-insta"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Твиттер">
                     <svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Фейсбук"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Линкедин"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-linkedin"></use>
@@ -306,28 +320,28 @@
               <p lang="en" class="our-team-text">Marketing</p>
 
               <ul class="our-team list social">
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Инстаграм"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-insta"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Твиттер"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Фейсбук"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Линкедин"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-linkedin"></use>
@@ -349,28 +363,28 @@
               <p lang="en" class="our-team-text">UI Designer</p>
 
               <ul class="our-team list social">
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Инстаграм"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-insta"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Твиттер"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Фейсбук"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="icon-container">
                   <a class="icon-container-link" href="" aria-label="Линкедин"
                     ><svg class="our-team-social-svg">
                       <use href="./image/sprite.svg#icon-linkedin"></use>
@@ -381,10 +395,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
-      <!-- <section class="clients-main">
+      <section class="clients-main">
         <div class="container">
           <h2 class="clients">Постоянные клиенты</h2>
           <ul class="clients-item list">
@@ -468,7 +482,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- <footer class="footer-main">
