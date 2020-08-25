@@ -2,7 +2,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  margin-top: 0px;
   padding: 0px;
+  padding-top: 60px;
 }
 .about-us-item-link {
   margin-left: auto;
@@ -28,20 +30,51 @@
   letter-spacing: 0.03em;
 }
 
-.about-us-item-list:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .about-us-icon-svg {
   width: 70px;
   height: 70px;
 }
-
 .about-us-container-svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
   height: 120px;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 767px) {
+  .about-us-item-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .about-us-container-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us-container-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    // width: calc((100% - 30px) / 2);
+  }
+  .about-us-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-us-item-list {
+    width: calc((100% - 30px) / 2);
+  }
+  .about-us-item-list {
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+  .about-us-item-list {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
 }

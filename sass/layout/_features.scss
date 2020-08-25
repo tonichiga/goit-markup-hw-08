@@ -59,3 +59,27 @@
 
 @media screen and (max-width: 767px) {
 }
+@media screen and (min-width: 768px) {
+  .features-item {
+    display: flex;
+  }
+  .feature-img {
+    display: block;
+    width: 226px;
+    height: 188px;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+  }
+  .feature-img:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 45px;
+  }
+}
