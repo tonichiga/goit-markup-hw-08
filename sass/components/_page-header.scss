@@ -58,20 +58,23 @@
   border-radius: 2px;
   background-color: $accent-color;
 }
-.address-text {
-  text-align: center;
-  font-style: normal;
-  font-family: Roboto;
-  color: $primary-text-color;
-}
+
 .site-nav-text {
   color: $title-text-color;
 }
 .site-nav {
   text-align: center;
 }
-
+.current {
+  color: $accent-color;
+  position: relative;
+}
 @media screen and (max-width: 767px) {
+  .address-text {
+    text-align: center;
+    font-style: normal;
+    color: $primary-text-color;
+  }
   .page-header {
     position: fixed;
     display: flex;
@@ -165,7 +168,65 @@
     pointer-events: all;
   }
 }
-.current {
-  color: $accent-color;
-  position: relative;
+
+@media screen and (min-width: 768px) {
+  .logo.link {
+    margin-right: 81px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 84px;
+  }
+  .site-nav-list-item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .address-item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .address-item-list {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .address-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    text-transform: none;
+  }
+  .site-nav-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
 }

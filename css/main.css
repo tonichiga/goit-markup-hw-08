@@ -399,7 +399,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    background-color: tomato;
     width: 768px;
   }
 }
@@ -505,13 +504,6 @@ body {
   background-color: #2196f3;
 }
 
-.address-text {
-  text-align: center;
-  font-style: normal;
-  font-family: Roboto;
-  color: #757575;
-}
-
 .site-nav-text {
   color: #212121;
 }
@@ -520,7 +512,17 @@ body {
   text-align: center;
 }
 
+.current {
+  color: #2196f3;
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
+  .address-text {
+    text-align: center;
+    font-style: normal;
+    color: #757575;
+  }
   .page-header {
     position: fixed;
     display: flex;
@@ -609,9 +611,62 @@ body {
   }
 }
 
-.current {
-  color: #2196f3;
-  position: relative;
+@media screen and (min-width: 768px) {
+  .logo.link {
+    margin-right: 81px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 84px;
+  }
+  .site-nav-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .address-item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .address-item-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .address-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-transform: none;
+  }
+  .site-nav-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .modal-form {
