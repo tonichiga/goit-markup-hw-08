@@ -13,64 +13,85 @@
   </head>
   <body>
     <header class="site">
-      <div class="container">
-        <nav class="header-nav">
-          <!--Логотип сайта-->
-          <a lang="en" href="./index.html" class="logo link"
-            ><span class="first-logo">Web</span
-            ><span class="second-logo">Studio</span></a
-          >
-          <!--Навигационное меню в шапке-->
+      <div class="container page-header">
+        <a lang="en" href="./index.html" class="logo link"
+          ><span class="first-logo">Web</span
+          ><span class="second-logo">Studio</span></a
+        >
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          data-menu-button
+          data-menu-close-button
+        >
+          <svg class="icon-page-header-svg" width="40" height="40">
+            <use
+              class="icon-menu"
+              href="./image/sprite.svg#icon-menu"
+              data-menu-close
+            ></use>
+            <use
+              class="icon-close-menu"
+              href="./image/sprite.svg#icon-close-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-wrapper" data-menu>
+          <nav class="header-nav">
+            <!--Логотип сайта-->
+            <!--Навигационное меню в шапке-->
 
-          <ul class="site-nav list">
-            <li class="site-nav-list-item">
-              <a href="./index.html" class="site-nav-text hover-focus link"
-                >Студия</a
-              >
-            </li>
-            <li class="site-nav-list-item">
-              <a
-                href="./portfolio.html"
-                class="site-nav-text hover-focus link current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav-list-item">
-              <a href="" class="site-nav-text hover-focus link">Контакты</a>
-            </li>
-          </ul>
-          <address class="nav-address">
-            <ul class="address list">
-              <li class="address-item-list mail-item">
-                <a
-                  lang="en"
-                  href="mailto:info@devstudio.com"
-                  class="address-text link hover-focus"
-                >
-                  <svg class="icon-mail-svg">
-                    <use href="./image/sprite.svg#icon-mail-img"></use>
-                  </svg>
-                  <!-- <img
-                        class="mail-link"
-                        src="./image/address-img/mail-img.svg"
-                        alt="электронная почта"
-                      /> -->info@devstudio.com</a
+            <ul class="site-nav list">
+              <li class="site-nav-list-item">
+                <a href="./index.html" class="site-nav-text hover-focus link"
+                  >Студия</a
                 >
               </li>
-              <li class="address-item-list tel-item">
+              <li class="site-nav-list-item">
                 <a
-                  href="tel:+380961111111"
-                  class="address-text link hover-focus"
+                  href="./portfolio.html"
+                  class="site-nav-text hover-focus link current"
+                  >Портфолио</a
                 >
-                  <svg class="icon-tel-svg">
-                    <use href="./image/sprite.svg#icon-tel-img"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
+              </li>
+              <li class="site-nav-list-item">
+                <a href="" class="site-nav-text hover-focus link">Контакты</a>
               </li>
             </ul>
-          </address>
-        </nav>
+            <address class="nav-address">
+              <ul class="address list">
+                <li class="address-item-list mail-item">
+                  <a
+                    lang="en"
+                    href="mailto:info@devstudio.com"
+                    class="address-text link hover-focus"
+                  >
+                    <svg class="icon-mail-svg">
+                      <use href="./image/sprite.svg#icon-mail-img"></use>
+                    </svg>
+                    <!-- <img
+                          class="mail-link"
+                          src="./image/address-img/mail-img.svg"
+                          alt="электронная почта"
+                        /> -->info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-item-list tel-item">
+                  <a
+                    href="tel:+380961111111"
+                    class="address-text link hover-focus"
+                  >
+                    <svg class="icon-tel-svg">
+                      <use href="./image/sprite.svg#icon-tel-img"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </nav>
+        </div>
         <!--Контактная информация-->
       </div>
     </header>
@@ -108,7 +129,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/techno.jpg"
                     alt="список сотрудников"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -134,7 +154,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/poster.jpg"
                     alt="баскетбольная команда"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -163,7 +182,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/restaurant.jpg"
                     alt="ресторан"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -192,7 +210,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/prime.jpg"
                     alt="наушники"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -221,7 +238,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/boxes.jpg"
                     alt="коробки"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -250,7 +266,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/borders.jpg"
                     alt="о компании"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -279,7 +294,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/limited-edition.jpg"
                     alt="журнал"
-                    width="370"
                     height="294"
                   />
 
@@ -309,7 +323,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/lab.jpg"
                     alt="бирка"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -338,7 +351,6 @@
                     class="item-link"
                     src="./image/portfolio/sections-image/business.jpg"
                     alt="печатает на компьютере"
-                    width="370"
                     height="294"
                   />
                   <div class="wrapper">
@@ -448,7 +460,7 @@
           </div>
 
           <div class="follow-us">
-            <form action="">
+            <form action="#">
               <p class="follow-us-title">
                 <b>Подпишитесь на рассылку</b>
               </p>
@@ -459,17 +471,18 @@
                   name="user-email"
                   placeholder="E-mail"
                 />
-                <button class="follow-us-btn" type="submit">
-                  <span class="follow-us-btn-title">Подписаться</span>
-                  <!-- <svg>
-                    <use href="./image/sprite.svg#icon-send"></use>
-                  </svg> -->
-                </button>
+                <div class="follow-us-btn-container">
+                  <button class="follow-us-btn" type="submit">
+                    <span class="follow-us-btn-title">Подписаться</span>
+                  </button>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
