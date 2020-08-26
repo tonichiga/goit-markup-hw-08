@@ -1,11 +1,9 @@
 .follow-us-title {
-  text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
-  font-style: normal;
-  /* font-weight: 700; */
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $second-text-color;
@@ -17,12 +15,10 @@
 .follow-us-form {
   display: block;
   margin-bottom: 20px;
-  max-width: 450px;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 0.8;
-  letter-spacing: 0.03em;
   color: $second-text-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -67,5 +63,24 @@
     fill: white;
     width: 24px;
     height: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .follow-us-form {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .follow-us {
+    display: block;
+  }
+  .follow-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .follow-us-form {
+    width: 450px;
   }
 }

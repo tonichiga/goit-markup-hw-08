@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
+    <title>Web Studio by Anton Chyhariev</title>
 
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
@@ -225,10 +225,15 @@
             <li class="our-team-item-list">
               <picture class="img-test">
                 <source
+                  class="img-test"
                   srcset="./image/tablet/our-team/img-1.jpg"
                   media="(min-width: 768px)"
                 />
-                <img src="./image/tablet/our-team/img-1.jpg" alt="Фотография" />
+                <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-1.jpg"
+                  alt="Фотография"
+                />
               </picture>
               <!-- <img
                 class="our-team-item-photo"
@@ -278,7 +283,11 @@
                   srcset="./image/tablet/our-team/img-2.jpg"
                   media="(min-width: 768px)"
                 />
-                <img src="./image/tablet/our-team/img-2.jpg" alt="Фотография" />
+                <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-2.jpg"
+                  alt="Фотография"
+                />
               </picture>
               <h3 class="our-team-subtitle">Ольга Иванова</h3>
               <p lang="en" class="our-team-text">Frontend Developer</p>
@@ -321,7 +330,11 @@
                   srcset="./image/tablet/our-team/img-3.jpg"
                   media="(min-width: 768px)"
                 />
-                <img src="./image/tablet/our-team/img-3.jpg" alt="Фотография" />
+                <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-3.jpg"
+                  alt="Фотография"
+                />
               </picture>
               <h3 class="our-team-subtitle">Андрей Шевченко</h3>
               <p lang="en" class="our-team-text">Marketing</p>
@@ -364,7 +377,11 @@
                   srcset="./image/tablet/our-team/img-4.jpg"
                   media="(min-width: 768px)"
                 />
-                <img src="./image/tablet/our-team/img-4.jpg" alt="Фотография" />
+                <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-4.jpg"
+                  alt="Фотография"
+                />
               </picture>
               <h3 class="our-team-subtitle">Иван Николаев</h3>
               <p lang="en" class="our-team-text">UI Designer</p>
@@ -495,87 +512,90 @@
     <footer class="footer-main">
       <div class="container">
         <div class="footer-main-container">
-          <div class="footer-address">
-            <a lang="en" href="./index.html" class="link logo"
-              ><span class="first-logo">Web</span>
-              <span class="footer-logo">Studio</span></a
-            >
-            <address class="footer-address-container">
-              <ul class="footer list">
-                <li class="footer-list-link">
+          <div class="footer-wrap">
+            <div class="footer-address">
+              <a lang="en" href="./index.html" class="link logo"
+                ><span class="first-logo">Web</span>
+                <span class="footer-logo">Studio</span></a
+              >
+
+              <address class="footer-address-container">
+                <ul class="footer list">
+                  <li class="footer-list-link">
+                    <a
+                      href="https://goo.gl/maps/cEKbpR4M8F39uecU8"
+                      class="footer-address-link link"
+                      >г. Киев, пр-т Леси Украинки, 26</a
+                    >
+                  </li>
+                  <li class="footer-list-link">
+                    <a
+                      lang="en"
+                      href="mailto:info@example.com"
+                      class="footer-mailto-link link"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="footer-list-link">
+                    <a href="tel:+380991111111" class="footer-tel-link link"
+                      >+38 099 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="join-in">
+              <p class="join-in-title">
+                <b class="join-in-text">присоединяйтесь</b>
+              </p>
+              <ul class="join-in-social list link">
+                <li class="join-in-social-list">
                   <a
-                    href="https://goo.gl/maps/cEKbpR4M8F39uecU8"
-                    class="footer-address-link link"
-                    >г. Киев, пр-т Леси Украинки, 26</a
+                    class="icon-container-link footer-social"
+                    href=""
+                    aria-label="Инстаграм"
                   >
+                    <svg class="footer-icon-social-svg">
+                      <use href="./image/sprite.svg#icon-insta"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-list-link">
+                <li class="join-in-social-list">
                   <a
-                    lang="en"
-                    href="mailto:info@example.com"
-                    class="footer-mailto-link link"
-                    >info@example.com</a
+                    class="icon-container-link footer-social"
+                    href=""
+                    aria-label="Твиттер"
                   >
+                    <svg class="footer-icon-social-svg">
+                      <use href="./image/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-list-link">
-                  <a href="tel:+380991111111" class="footer-tel-link link"
-                    >+38 099 111 11 11</a
+                <li class="join-in-social-list">
+                  <a
+                    class="icon-container-link footer-social"
+                    href=""
+                    aria-label="Фейсбук"
                   >
+                    <svg class="footer-icon-social-svg">
+                      <use href="./image/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-in-social-list">
+                  <a
+                    class="icon-container-link footer-social"
+                    href=""
+                    aria-label="Линкедин"
+                  >
+                    <svg class="footer-icon-social-svg">
+                      <use href="./image/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-
-          <div class="join-in">
-            <p class="join-in-title">
-              <b class="join-in-text">присоединяйтесь</b>
-            </p>
-            <ul class="join-in-social list link">
-              <li class="join-in-social-list">
-                <a
-                  class="icon-container-link footer-social"
-                  href=""
-                  aria-label="Инстаграм"
-                >
-                  <svg class="footer-icon-social-svg">
-                    <use href="./image/sprite.svg#icon-insta"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-in-social-list">
-                <a
-                  class="icon-container-link footer-social"
-                  href=""
-                  aria-label="Твиттер"
-                >
-                  <svg class="footer-icon-social-svg">
-                    <use href="./image/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-in-social-list">
-                <a
-                  class="icon-container-link footer-social"
-                  href=""
-                  aria-label="Фейсбук"
-                >
-                  <svg class="footer-icon-social-svg">
-                    <use href="./image/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-in-social-list">
-                <a
-                  class="icon-container-link footer-social"
-                  href=""
-                  aria-label="Линкедин"
-                >
-                  <svg class="footer-icon-social-svg">
-                    <use href="./image/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
 
           <div class="follow-us">

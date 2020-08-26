@@ -11,7 +11,6 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
-  letter-spacing: 0.03em;
   color: $title-text-color;
 }
 
@@ -47,10 +46,7 @@
   bottom: 0;
   left: 0;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
   background: rgba(47, 48, 58, 0.8);
@@ -66,12 +62,13 @@
   .feature-img {
     display: block;
     width: 226px;
-    height: 188px;
+    height: 226px;
+    margin-right: 0;
     object-fit: cover;
     object-position: center;
     box-sizing: border-box;
   }
-  .feature-img:not(:last-child) {
+  .features-item-list:not(:last-child) {
     margin-right: 30px;
   }
   .features-text {

@@ -4,6 +4,7 @@
   align-items: center;
   padding-top: 60px;
   padding-left: 0;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 .our-team-title {
@@ -55,6 +56,8 @@
 .our-team-subtitle {
   margin-top: 0;
   margin-bottom: 10px;
+  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -92,6 +95,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .icon-container:not(:last-child) {
+    margin-right: 10px;
+  }
   .our-team-item-list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -101,6 +107,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
   .our-team-item-list {
     margin: 0;
@@ -113,5 +120,8 @@
   }
   .our-team-item-list:nth-child(odd) {
     margin-right: 30px;
+  }
+  .icon-container:not(:last-child) {
+    margin-right: 10px;
   }
 }
