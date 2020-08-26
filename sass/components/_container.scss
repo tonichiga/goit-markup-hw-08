@@ -20,7 +20,6 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    background-color: grey;
-    width: 1200px;
+    min-width: 1200px;
   }
 }

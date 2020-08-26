@@ -1,10 +1,10 @@
 .page-header {
   position: fixed;
+  display: flex;
+  align-items: center;
+  width: 1200px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid #ececec;
   background-color: $second-text-color;
   z-index: 100;
@@ -174,7 +174,6 @@
     pointer-events: all;
   }
 }
-
 @media screen and (min-width: 768px) {
   .logo.link {
     margin-right: 81px;
@@ -184,10 +183,7 @@
   .menu-btn {
     display: none;
   }
-  .page-header {
-    width: 768px;
-    display: flex;
-  }
+
   .header-nav {
     display: flex;
     justify-content: center;
@@ -232,5 +228,106 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+  }
+  @media screen and (max-width: 1199px) {
+    .page-header {
+      width: 768px;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-address .address > .address-item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-address .address > .address-item-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .nav-address {
+    margin-left: auto;
+
+    .address-text {
+      display: flex;
+      align-items: center;
+    }
+    .address {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  .address-item-list {
+    margin: 0;
+  }
+  .header-nav .nav-address .address {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav .mail-item {
+    margin-right: 30px;
+  }
+
+  /* .header-nav .mail-link,
+.header-nav .tel-link {
+  margin-right: 10px; */
+
+  // .address-text:hover .icon-mail-svg,
+  // .address-text:focus .icon-mail-svg {
+  //   stroke-width: 2px;
+  //   fill: $accent-color;
+  // }
+
+  .logo {
+    margin-right: 85px;
+  }
+  .first-logo,
+  .second-logo,
+  .footer-logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .site {
+    & .header-nav {
+      display: flex;
+      align-items: center;
+    }
+    & .site-nav {
+      display: flex;
+      margin: 0px;
+      margin-right: 305px;
+      padding: 0px;
+    }
+    & .site-nav-list-item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .site-nav-text,
+  .address-text {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    transition: 250ms $defaul-cubic-bezier;
+  }
+
+  .site-nav-list-item {
+    position: relative;
+  }
+  .site-nav-text.current::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    content: "";
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: $accent-color;
   }
 }
