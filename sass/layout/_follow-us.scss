@@ -42,7 +42,6 @@
   justify-content: center;
   align-items: center;
   width: 200px;
-
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -82,5 +81,30 @@
   }
   .follow-us-form {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .follow-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .follow-us-title {
+    display: flex;
+    align-items: baseline;
+  }
+  .follow-us-form {
+    display: flex;
+    align-items: center;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    padding-left: 16px;
+  }
+
+  .follow-us-btn-title {
+    margin-right: 10px;
   }
 }
