@@ -396,7 +396,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -1114,6 +1114,7 @@ body {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../image/mobile-image/hero-section/mobile-hero.jpg);
     max-width: 480px;
+    background-position: center;
   }
 }
 
@@ -1811,15 +1812,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 60px;
-  }
   .footer-main-container {
-    display: flex;
-    justify-content: center;
     display: block;
     padding: 0;
     margin-right: 0;
@@ -1858,16 +1851,18 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-main-container {
-    width: 768px;
-  }
   .footer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 60px;
     padding-left: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-main {
+    box-sizing: border-box;
     padding-bottom: 42px;
     background-color: #2f303a;
   }
@@ -1935,7 +1930,7 @@ body {
   padding: 0;
 }
 
-.join-in-social-list:not(:last-child) {
+.join-in-social-list-link:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1967,11 +1962,8 @@ body {
   .icon-container-link.footer-social {
     background-color: rgba(255, 255, 255, 0.1);
   }
-  .join-in-social-list:not(:last-child) {
-    margin-right: 10px;
-  }
   .join-in {
-    margin-right: 94px;
+    padding-right: 94px;
   }
 }
 

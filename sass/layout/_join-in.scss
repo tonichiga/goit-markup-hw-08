@@ -27,7 +27,7 @@
   margin-bottom: 60px;
   padding: 0;
 }
-.join-in-social-list:not(:last-child) {
+.join-in-social-list-link:not(:last-child) {
   margin-right: 10px;
 }
 .icon-container-link.footer-social {
@@ -64,11 +64,9 @@
   .icon-container-link.footer-social {
     background-color: rgba(255, 255, 255, 0.1);
   }
-  .join-in-social-list:not(:last-child) {
-    margin-right: 10px;
-  }
+
   .join-in {
-    margin-right: 94px;
+    padding-right: 94px;
   }
 }
 @media screen and (min-width: 1200px) {

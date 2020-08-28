@@ -89,15 +89,9 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .footer-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 60px;
-  }
   .footer-main-container {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     // width: 768px;
     display: block;
     padding: 0;
@@ -139,16 +133,18 @@
     width: 231px;
   }
   @media screen and (max-width: 1199px) {
-    .footer-main-container {
-      width: 768px;
-    }
     .footer-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      margin-bottom: 60px;
       padding-left: 60px;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-main {
+    box-sizing: border-box;
     padding-bottom: 42px;
     background-color: #2f303a;
 
