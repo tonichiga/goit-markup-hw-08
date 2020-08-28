@@ -1,8 +1,9 @@
 .page-header {
   position: fixed;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 1px solid #ececec;

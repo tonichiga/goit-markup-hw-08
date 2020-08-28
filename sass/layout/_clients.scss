@@ -28,7 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: solid #afb1b8 1px;
   border-radius: 4px;
@@ -91,6 +90,9 @@
     }
     .clients-item {
       flex-wrap: nowrap;
+    }
+    .clients-link-list {
+      width: 170px;
     }
     .clients-item-list {
       &:not(:last-child) {

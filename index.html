@@ -14,88 +14,90 @@
 
   <body>
     <header class="site">
-      <div class="container page-header">
-        <a lang="en" href="./index.html" class="logo link"
-          ><span class="first-logo">Web</span
-          ><span class="second-logo">Studio</span></a
-        >
-        <button
-          type="button"
-          class="menu-btn"
-          aria-expanded="false"
-          data-menu-button
-          data-menu-close-button
-        >
-          <svg class="icon-page-header-svg" width="40" height="40">
-            <use
-              class="icon-menu"
-              href="./image/sprite.svg#icon-menu"
-              data-menu-close
-            ></use>
-            <use
-              class="icon-close-menu"
-              href="./image/sprite.svg#icon-close-menu"
-            ></use>
-          </svg>
-        </button>
-        <div class="menu-wrapper" data-menu>
-          <nav class="header-nav">
-            <!--Логотип сайта-->
-            <!--Навигационное меню в шапке-->
+      <div class="header-wrapper">
+        <div class="container page-header">
+          <a lang="en" href="./index.html" class="logo link"
+            ><span class="first-logo">Web</span
+            ><span class="second-logo">Studio</span></a
+          >
+          <button
+            type="button"
+            class="menu-btn"
+            aria-expanded="false"
+            data-menu-button
+            data-menu-close-button
+          >
+            <svg class="icon-page-header-svg" width="40" height="40">
+              <use
+                class="icon-menu"
+                href="./image/sprite.svg#icon-menu"
+                data-menu-close
+              ></use>
+              <use
+                class="icon-close-menu"
+                href="./image/sprite.svg#icon-close-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-wrapper" data-menu>
+            <nav class="header-nav">
+              <!--Логотип сайта-->
+              <!--Навигационное меню в шапке-->
 
-            <ul class="site-nav list">
-              <li class="site-nav-list-item">
-                <a
-                  href="./index.html"
-                  class="site-nav-text hover-focus link current"
-                  >Студия</a
-                >
-              </li>
-              <li class="site-nav-list-item">
-                <a
-                  href="./portfolio.html"
-                  class="site-nav-text hover-focus link"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="site-nav-list-item">
-                <a href="" class="site-nav-text hover-focus link">Контакты</a>
-              </li>
-            </ul>
-            <address class="nav-address">
-              <ul class="address list">
-                <li class="address-item-list mail-item">
+              <ul class="site-nav list">
+                <li class="site-nav-list-item">
                   <a
-                    lang="en"
-                    href="mailto:info@devstudio.com"
-                    class="address-text link hover-focus"
-                  >
-                    <svg class="icon-mail-svg">
-                      <use href="./image/sprite.svg#icon-mail-img"></use>
-                    </svg>
-                    <!-- <img
-                      class="mail-link"
-                      src="./image/address-img/mail-img.svg"
-                      alt="электронная почта"
-                    /> -->info@devstudio.com</a
+                    href="./index.html"
+                    class="site-nav-text hover-focus link current"
+                    >Студия</a
                   >
                 </li>
-                <li class="address-item-list tel-item">
+                <li class="site-nav-list-item">
                   <a
-                    href="tel:+380961111111"
-                    class="address-text link hover-focus"
+                    href="./portfolio.html"
+                    class="site-nav-text hover-focus link"
+                    >Портфолио</a
                   >
-                    <svg class="icon-tel-svg">
-                      <use href="./image/sprite.svg#icon-tel-img"></use>
-                    </svg>
-                    +38 096 111 11 11</a
-                  >
+                </li>
+                <li class="site-nav-list-item">
+                  <a href="" class="site-nav-text hover-focus link">Контакты</a>
                 </li>
               </ul>
-            </address>
-          </nav>
+              <address class="nav-address">
+                <ul class="address list">
+                  <li class="address-item-list mail-item">
+                    <a
+                      lang="en"
+                      href="mailto:info@devstudio.com"
+                      class="address-text link hover-focus"
+                    >
+                      <svg class="icon-mail-svg">
+                        <use href="./image/sprite.svg#icon-mail-img"></use>
+                      </svg>
+                      <!-- <img
+                        class="mail-link"
+                        src="./image/address-img/mail-img.svg"
+                        alt="электронная почта"
+                      /> -->info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address-item-list tel-item">
+                    <a
+                      href="tel:+380961111111"
+                      class="address-text link hover-focus"
+                    >
+                      <svg class="icon-tel-svg">
+                        <use href="./image/sprite.svg#icon-tel-img"></use>
+                      </svg>
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </nav>
+          </div>
+          <!--Контактная информация-->
         </div>
-        <!--Контактная информация-->
       </div>
     </header>
 
@@ -181,35 +183,119 @@
           <ul class="features-item list">
             <li class="features-item-list features-container">
               <div class="features-item-container">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./image/mobile-image/features/features-1.jpg    1x,
+                      ./image/mobile-image/features/features-1@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./image/tablet-image/features/tablet-features-1@1x.jpg 1x,
+                      ./image/tablet-image/features/tablet-features-1@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./image/features/features-1.jpg    1x,
+                      ./image/features/features-1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="features-img"
+                    src="./image/mobile-image/features/features-1.jpg"
+                    alt="компьютер"
+                  />
+                </picture>
+                <!-- <img
                   class="feature-img"
                   src="./image/what-we-do/what-we-do-1.jpg"
                   alt="десктопные приложения"
                   height="294"
-                />
+                /> -->
                 <p class="features-text">десктопные приложения</p>
               </div>
             </li>
 
             <li class="features-item-list features-container">
               <div class="features-item-container">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./image/mobile-image/features/features-2.jpg    1x,
+                      ./image/mobile-image/features/features-2@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./image/tablet-image/features/tablet-features-2@1x.jpg 1x,
+                      ./image/tablet-image/features/tablet-features-2@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./image/features/features-2.jpg    1x,
+                      ./image/features/features-2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="features-img"
+                    src="./image/mobile-image/features/features-2.jpg"
+                    alt="мобильные решения"
+                  />
+                </picture>
+                <!-- <img
                   class="feature-img"
                   src="./image/what-we-do/what-we-do-2.jpg"
                   alt="мобильные приложения"
                   height="294"
-                />
+                /> -->
                 <p class="features-text">мобильные приложения</p>
               </div>
             </li>
             <li class="features-item-list features-container">
               <div class="features-item-container">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./image/mobile-image/features/features-3.jpg    1x,
+                      ./image/mobile-image/features/features-3@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./image/tablet-image/features/tablet-features-3@1x.jpg 1x,
+                      ./image/tablet-image/features/tablet-features-3@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./image/features/features-3.jpg    1x,
+                      ./image/features/features-3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="features-img"
+                    src="./image/mobile-image/features/features-3.jpg"
+                    alt="десктопные решения"
+                  />
+                </picture>
+                <!-- <img
                   class="feature-img"
                   src="./image/what-we-do/what-we-do-3.jpg"
                   alt="дизайнерские решения"
                   height="294"
-                />
+                /> -->
                 <p class="features-text">дизайнерские решения</p>
               </div>
             </li>
@@ -223,18 +309,42 @@
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-item list">
             <li class="our-team-item-list">
-              <picture class="img-test">
+              <picture>
                 <source
-                  class="img-test"
-                  srcset="./image/tablet/our-team/img-1.jpg"
-                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/mobile-image/about-us/about-us-nikolay@1x.jpg 1x,
+                    ./image/mobile-image/about-us/about-us-nikolay@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet-image/our-team/tablet-about-us-nikolay@1x.jpg 1x,
+                    ./image/tablet-image/our-team/tablet-about-us-nikolay@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/our-team/our-team-nikolay@1x.jpg 1x,
+                    ./image/our-team/our-team-nikolay@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="img-test"
-                  src="./image/tablet/our-team/img-1.jpg"
-                  alt="Фотография"
+                  class="feature-img"
+                  src="./image/mobile-image/about-us/about-us-nikolay.jpg"
+                  alt="член команды"
                 />
               </picture>
+              <!-- <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-1.jpg"
+                  alt="Фотография"
+                /> -->
+
               <!-- <img
                 class="our-team-item-photo"
                 src="./image/team/img-team-1.jpg"
@@ -278,17 +388,41 @@
             </li>
 
             <li class="our-team-item-list">
-              <picture class="img-test">
+              <picture>
                 <source
-                  srcset="./image/tablet/our-team/img-2.jpg"
-                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/mobile-image/about-us/about-us-olga@1x.jpg 1x,
+                    ./image/mobile-image/about-us/about-us-olga@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet-image/our-team/tablet-about-us-olga@1x.jpg 1x,
+                    ./image/tablet-image/our-team/tablet-about-us-olga@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./image/our-team/our-team-olga@1x.jpg 1x,
+                    ./image/our-team/our-team-olga@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="img-test"
-                  src="./image/tablet/our-team/img-2.jpg"
-                  alt="Фотография"
+                  class="feature-img"
+                  src="./image/mobile-image/about-us/about-us-olga.jpg"
+                  alt="член команды"
                 />
               </picture>
+              <!-- <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-2.jpg"
+                  alt="Фотография"
+                /> -->
+
               <h3 class="our-team-subtitle">Ольга Иванова</h3>
               <p lang="en" class="our-team-text">Frontend Developer</p>
 
@@ -325,17 +459,40 @@
             </li>
 
             <li class="our-team-item-list">
-              <picture class="img-test">
+              <picture>
                 <source
-                  srcset="./image/tablet/our-team/img-3.jpg"
-                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/mobile-image/about-us/about-us-andrey@1x.jpg 1x,
+                    ./image/mobile-image/about-us/about-us-andrey@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet-image/our-team/tablet-about-us-andrey@1x.jpg 1x,
+                    ./image/tablet-image/our-team/tablet-about-us-andrey@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./image/our-team/our-team-andrey@1x.jpg 1x,
+                    ./image/our-team/our-team-andrey@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="img-test"
-                  src="./image/tablet/our-team/img-3.jpg"
-                  alt="Фотография"
+                  class="feature-img"
+                  src="./image/mobile-image/about-us/about-us-andrey.jpg"
+                  alt="член команды"
                 />
               </picture>
+              <!-- <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-3.jpg"
+                  alt="Фотография"
+                /> -->
               <h3 class="our-team-subtitle">Андрей Шевченко</h3>
               <p lang="en" class="our-team-text">Marketing</p>
 
@@ -372,17 +529,40 @@
             </li>
 
             <li class="our-team-item-list">
-              <picture class="img-test">
+              <picture>
                 <source
-                  srcset="./image/tablet/our-team/img-4.jpg"
-                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/mobile-image/about-us/about-us-ivan@1x.jpg 1x,
+                    ./image/mobile-image/about-us/about-us-ivan@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet-image/our-team/tablet-about-us-ivan@1x.jpg 1x,
+                    ./image/tablet-image/our-team/tablet-about-us-ivan@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./image/our-team/our-team-ivan@1x.jpg 1x,
+                    ./image/our-team/our-team-ivan@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
                 <img
                   class="img-test"
-                  src="./image/tablet/our-team/img-4.jpg"
-                  alt="Фотография"
+                  class="feature-img"
+                  src="./image/mobile-image/about-us/about-us-ivan.jpg"
+                  alt="член команды"
                 />
               </picture>
+              <!-- <img
+                  class="img-test"
+                  src="./image/tablet/our-team/img-4.jpg"
+                  alt="Фотография"
+                /> -->
               <h3 class="our-team-subtitle">Иван Николаев</h3>
               <p lang="en" class="our-team-text">UI Designer</p>
 

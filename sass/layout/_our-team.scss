@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .img-test {
+    width: 100%;
+    // height: 260px;
+  }
   .icon-container:not(:last-child) {
     margin-right: 10px;
   }
