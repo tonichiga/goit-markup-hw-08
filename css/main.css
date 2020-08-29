@@ -1818,7 +1818,6 @@ body {
     margin-right: 0;
   }
   .footer-main {
-    padding-bottom: 42px;
     background-color: #2f303a;
   }
   .footer-main .link.logo {
@@ -1861,9 +1860,13 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
   .footer-main {
     box-sizing: border-box;
-    padding-bottom: 42px;
     background-color: #2f303a;
   }
   .footer-main .link.logo {
@@ -1878,7 +1881,6 @@ body {
   .footer-main-container {
     display: flex;
     align-items: baseline;
-    padding-top: 90px;
   }
   .footer-address {
     display: flex;
@@ -1950,7 +1952,7 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
-    justify-content: space-around;
+    justify-content: center;
   }
   .join-in-title {
     margin-top: 0px;

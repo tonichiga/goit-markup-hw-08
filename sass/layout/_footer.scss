@@ -98,7 +98,7 @@
     margin-right: 0;
   }
   .footer-main {
-    padding-bottom: 42px;
+    // padding-bottom: 42px;
     background-color: #2f303a;
 
     .link.logo {
@@ -143,9 +143,15 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
   .footer-main {
+    // padding-top: 0;
     box-sizing: border-box;
-    padding-bottom: 42px;
+    // padding-bottom: 60px;
     background-color: #2f303a;
 
     .link.logo {
@@ -161,7 +167,7 @@
   .footer-main-container {
     display: flex;
     align-items: baseline;
-    padding-top: 90px;
+    // padding-top: 90px;
   }
   .footer-address {
     display: flex;
