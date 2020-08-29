@@ -27,8 +27,11 @@
   margin-bottom: 60px;
   padding: 0;
 }
-.join-in-social-list-link:not(:last-child) {
+.join-in-social-list-link {
   margin-right: 10px;
+}
+.join-in-social-list-link.none {
+  margin-right: 0;
 }
 .icon-container-link.footer-social {
   background-color: rgba(255, 255, 255, 0.1);

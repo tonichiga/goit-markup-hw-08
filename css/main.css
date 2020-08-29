@@ -1932,8 +1932,12 @@ body {
   padding: 0;
 }
 
-.join-in-social-list-link:not(:last-child) {
+.join-in-social-list-link {
   margin-right: 10px;
+}
+
+.join-in-social-list-link.none {
+  margin-right: 0;
 }
 
 .icon-container-link.footer-social {
@@ -2222,7 +2226,7 @@ body {
     margin: -30px;
   }
   .portfolio-item-element {
-    width: calc((100% - 60px) / 2);
+    width: 354px;
     margin: 15px;
     box-sizing: border-box;
   }
