@@ -42,6 +42,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .about-us {
+    padding-bottom: 60px;
+  }
   .about-us-item-list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -76,6 +79,11 @@
   .about-us-item-list {
     &:nth-child(odd) {
       margin-right: 30px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .about-us {
+      padding-bottom: 60px;
     }
   }
 }

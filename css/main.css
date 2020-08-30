@@ -393,7 +393,7 @@ body {
   color: #757575;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 16px;
   letter-spacing: 0.03em;
 }
 
@@ -790,7 +790,7 @@ body {
 }
 
 .modal-form {
-  position: absolute;
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1014,8 +1014,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .modal-form {
+    position: relative;
     max-width: 450px;
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1055,9 +1055,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .modal-custom-checkbox {
-    left: 75px;
+@media screen and (min-width: 768px) {
+  .modal-form {
+    width: 450px;
   }
 }
 
@@ -1304,6 +1304,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .about-us {
+    padding-bottom: 60px;
+  }
   .about-us-item-list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1334,6 +1337,12 @@ body {
   }
   .about-us-item-list:nth-child(odd) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-us {
+    padding-bottom: 60px;
   }
 }
 
@@ -1429,6 +1438,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .features {
+    display: none;
+  }
   .features-text {
     width: 100%;
     height: 70px;
@@ -1439,6 +1451,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .features {
+    display: none;
+  }
   .features-item {
     display: flex;
   }
@@ -1466,6 +1481,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .features {
+    display: block;
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #ffffff;
@@ -2020,11 +2036,11 @@ body {
   padding: 0;
 }
 
-.join-in-social-list-link {
+.join-in-social-list {
   margin-right: 10px;
 }
 
-.join-in-social-list-link.none {
+.join-in-social-list.none {
   margin-right: 0;
 }
 
@@ -2283,6 +2299,12 @@ body {
   color: #212121;
 }
 
+.clip {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .portfolio .portfolio-text {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -2308,6 +2330,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio .portfolio-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
   .portfolio-item {
     display: flex;
     flex-wrap: wrap;

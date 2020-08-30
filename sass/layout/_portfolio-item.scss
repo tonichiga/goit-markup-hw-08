@@ -98,6 +98,11 @@
   letter-spacing: 0.06em;
   color: $title-text-color;
 }
+.clip {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .portfolio .portfolio-text {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -126,6 +131,11 @@
 // ВЫШЕ 768 ПИКСЕЛЕЙ
 
 @media screen and (min-width: 768px) {
+  .portfolio .portfolio-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
   .portfolio-item {
     display: flex;
     flex-wrap: wrap;
