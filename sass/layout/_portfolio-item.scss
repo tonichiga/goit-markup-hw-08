@@ -114,6 +114,9 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
 }
+.portfolio-text-container {
+  text-align: start;
+}
 //  ДО 767 ПИКЕСЕЛЕЙ
 
 @media screen and (max-width: 767px) {
