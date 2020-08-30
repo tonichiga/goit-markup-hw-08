@@ -428,6 +428,9 @@ body {
   .container {
     max-width: 480px;
   }
+  .container.page-header {
+    max-width: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -499,6 +502,8 @@ body {
 }
 
 .address {
+  white-space: nowrap;
+  text-align: center;
   padding: 0px;
   margin: 0;
 }
@@ -575,7 +580,7 @@ body {
   }
   .page-header {
     justify-content: space-between;
-    width: calc((100%-181px));
+    width: 100%;
     top: 0;
     padding-right: 15px;
   }
@@ -585,10 +590,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-  .address-item-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .address-item-list:not(:last-child) {
+    text-align: center;
     margin-bottom: 16px;
   }
   .menu-wrapper {
@@ -1313,6 +1316,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .about-us-title {
+    text-align: center;
   }
 }
 
@@ -2101,6 +2107,7 @@ body {
 
 .follow-us-form {
   display: block;
+  max-width: 450px;
   margin-bottom: 20px;
   height: 50px;
   font-weight: 400;
@@ -2234,9 +2241,10 @@ body {
 }
 
 .portfolio .portfolio-pre-text {
-  display: flex;
+  text-align: start;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 25px;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
@@ -2321,6 +2329,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .item-link {
+    width: 100%;
+    max-width: none;
+  }
   .portfolio-item-list:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
@@ -2341,7 +2353,7 @@ body {
   .portfolio-item {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
   .portfolio-item-element {
     width: 354px;
