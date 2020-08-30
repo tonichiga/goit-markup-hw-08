@@ -337,6 +337,40 @@ template {
   display: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+b {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: inherit;
+}
+
 .link {
   text-decoration: none;
 }
@@ -473,6 +507,7 @@ body {
   width: 16px;
   height: 11px;
   margin-right: 10px;
+  fill: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -485,7 +520,8 @@ body {
 .icon-tel-svg {
   margin-right: 10px;
   width: 10px;
-  height: 15px;
+  height: 14px;
+  fill: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -631,7 +667,7 @@ body {
   }
   .address-item-list {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
   }
   .site-nav {
@@ -668,7 +704,6 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header {
-    width: 768px;
     justify-content: center;
   }
 }
@@ -756,6 +791,7 @@ body {
 
 .modal-form {
   position: absolute;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -908,8 +944,11 @@ body {
 }
 
 .modal-btn-submit {
+  display: block;
   width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 0.53;
@@ -973,6 +1012,49 @@ body {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-form {
+    max-width: 450px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  .modal-form-input,
+  .modal-form-textarea {
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .modal-form-input {
+    position: relative;
+    height: 40px;
+    width: 100%;
+  }
+  .modal-form-textarea {
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-custom-checkbox {
     left: 75px;
@@ -1018,6 +1100,12 @@ body {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-item-btn {
+    justify-content: start;
+  }
 }
 
 .hero {

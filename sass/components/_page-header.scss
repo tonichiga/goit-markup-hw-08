@@ -26,6 +26,7 @@
   width: 16px;
   height: 11px;
   margin-right: 10px;
+  fill: $primary-text-color;
   transition: 250ms $defaul-cubic-bezier;
 }
 
@@ -39,7 +40,8 @@
 .icon-tel-svg {
   margin-right: 10px;
   width: 10px;
-  height: 15px;
+  height: 14px;
+  fill: $primary-text-color;
   transition: 250ms $defaul-cubic-bezier;
 }
 .icon-tel-svg {
@@ -192,7 +194,7 @@
   }
   .address-item-list {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
   }
   .site-nav {
@@ -232,7 +234,6 @@
   }
   @media screen and (max-width: 1199px) {
     .page-header {
-      width: 768px;
       justify-content: center;
     }
   }

@@ -43,3 +43,8 @@
       0px 3px 1px rgba(0, 0, 0, 0.1);
   }
 }
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-item-btn {
+    justify-content: start;
+  }
+}
