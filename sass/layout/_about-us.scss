@@ -40,31 +40,32 @@
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }
+// ДО
+
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us-item-list:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about-us-container-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-title {
+  text-align: center;
+}
+// ДО
 
 @media screen and (max-width: 767px) {
-  .about-us {
-    padding-bottom: 60px;
-  }
-  .about-us-item-list:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  .about-us-container-svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-us-title {
-    text-align: center;
-  }
 }
+
 @media screen and (min-width: 768px) {
-  .about-us {
-    padding-bottom: 60px;
+  .about-us-item-list:not(:last-child) {
+    margin-bottom: 0;
   }
   .about-us-container-svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 0;
     // width: calc((100% - 30px) / 2);
   }

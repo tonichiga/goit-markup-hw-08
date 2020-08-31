@@ -8,7 +8,7 @@
   margin-bottom: 0px;
   // margin-bottom: 34px;
   padding-left: 0px;
-  justify-content: center;
+  justify-content: start;
 }
 .portfolio-item-list:not(:last-child) {
   margin-right: 8px;
@@ -43,8 +43,8 @@
       0px 3px 1px rgba(0, 0, 0, 0.1);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .portfolio .portfolio-item-btn {
-    justify-content: start;
+    justify-content: center;
   }
 }

@@ -137,6 +137,12 @@
 // ВЫШЕ 768 ПИКСЕЛЕЙ
 
 @media screen and (min-width: 768px) {
+  .wrapper {
+    height: 100%;
+  }
+  .portfolio-item-wrapper {
+    height: unset;
+  }
   .portfolio .portfolio-title {
     white-space: nowrap;
     text-overflow: ellipsis;

@@ -78,15 +78,19 @@
   align-items: baseline;
   // padding-top: 90px;
 }
+
+// ДО
+
+.footer-main-container {
+  display: block;
+  // padding-top: 90px;
+}
+.footer-address {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
-  .footer-main-container {
-    display: block;
-    // padding-top: 90px;
-  }
-  .footer-address {
-    margin-bottom: 60px;
-    text-align: center;
-  }
 }
 @media screen and (min-width: 768px) {
   .footer-main-container {
@@ -119,6 +123,7 @@
     align-items: center;
     width: 231px;
     margin-right: 165px;
+    margin-bottom: 0;
   }
 
   .footer.list {
