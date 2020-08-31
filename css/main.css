@@ -499,6 +499,7 @@ body {
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
+  z-index: 120;
 }
 
 .address {
@@ -594,6 +595,10 @@ body {
 .address-text {
   text-align: center;
   font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
   color: #757575;
 }
 
@@ -630,6 +635,10 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
 }
 
 .site-nav-list-item:not(:last-child) {
@@ -1246,7 +1255,7 @@ body {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../image/mobile-image/hero-section/mobile-hero.jpg);
     max-width: 480px;
-    background-position: center;
+    background-size: contain;
   }
 }
 

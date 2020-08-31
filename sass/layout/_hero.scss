@@ -104,7 +104,8 @@
       ),
       url(../image/mobile-image/hero-section/mobile-hero.jpg);
     max-width: 480px;
-    background-position: center;
+    background-size: contain;
+    // background-position: center;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),

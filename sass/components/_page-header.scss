@@ -16,6 +16,7 @@
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
+  z-index: 120;
 }
 
 .address {
@@ -112,6 +113,10 @@
 .address-text {
   text-align: center;
   font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
   color: $primary-text-color;
 }
 
@@ -146,6 +151,11 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  letter-spacing: 0.02em;
 }
 .site-nav-list-item:not(:last-child) {
   margin-bottom: 40px;
