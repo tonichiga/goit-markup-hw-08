@@ -58,6 +58,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .about-us {
+    padding-bottom: 60px;
+  }
   .about-us-container-svg {
     display: flex;
     justify-content: center;
@@ -85,9 +88,6 @@
     }
   }
   @media screen and (max-width: 1199px) {
-    .about-us {
-      padding-bottom: 60px;
-    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -106,6 +106,7 @@
 
   .about-us {
     padding-top: 94px;
+    padding-bottom: 0;
     background-color: #ffffff;
   }
 
@@ -115,6 +116,7 @@
     margin-top: 0px;
     flex-grow: 1;
     margin-bottom: 0px;
+    padding-top: 0;
     /* background-color: teal; */
     justify-content: center;
   }

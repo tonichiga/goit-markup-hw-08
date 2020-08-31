@@ -80,28 +80,12 @@
     align-items: center;
     flex-direction: column;
   }
+
   .follow-us-form {
+    display: flex;
+    align-items: center;
     width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .follow-us-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .follow-us-title {
-    display: flex;
-    align-items: baseline;
-  }
-  .follow-us-form {
-    display: flex;
-    align-items: center;
-    width: 358px;
     height: 50px;
-    margin-right: 12px;
-    margin-bottom: 0;
     padding-left: 16px;
   }
 

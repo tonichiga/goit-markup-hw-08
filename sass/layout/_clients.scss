@@ -69,64 +69,64 @@
   }
 }
 @media screen and (min-width: 768px) {
-  @media screen and (max-width: 1199px) {
-    .clients-item-list {
-      display: block;
-      text-align: center;
-      width: calc((100% - 90px) / 3);
-    }
-    .clients-item {
-      margin: -15px;
-    }
-    .clients-item-list {
-      margin: 15px;
+  .clients-item-list {
+    display: block;
+    text-align: center;
+    width: calc((100% - 90px) / 3);
+  }
+  .clients-item {
+    margin: -15px;
+  }
+  .clients-item-list {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .clients-item {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+  .clients-link-list {
+    width: 170px;
+  }
+  .clients-item-list {
+    margin: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
-  @media screen and (min-width: 1200px) {
-    .clients {
-      margin-bottom: 50px;
-      font-weight: 700;
-      font-size: 36px;
-    }
-    .clients-item {
-      flex-wrap: nowrap;
-    }
-    .clients-link-list {
-      width: 170px;
-    }
-    .clients-item-list {
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
-    .clients-main {
-      padding-top: 94px;
-      padding-bottom: 94px;
-      background-color: #ffffff;
+  .clients-main {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #ffffff;
 
-      .clients-icon-svg {
-        display: flex;
-        align-self: center;
-        fill: #afb1b8;
-        transition: 250ms $defaul-cubic-bezier;
-      }
+    .clients-icon-svg {
+      display: flex;
+      align-self: center;
+      fill: #afb1b8;
+      transition: 250ms $defaul-cubic-bezier;
     }
-    .clients-item {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding-left: 0px;
+  }
+  .clients-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  .clients-link-list {
+    &:hover .clients-icon-svg,
+    &:focus .clients-icon-svg {
+      fill: $accent-color;
     }
-    .clients-link-list {
-      &:hover .clients-icon-svg,
-      &:focus .clients-icon-svg {
-        fill: $accent-color;
-      }
-    }
-    .clients-link-list {
-      &:hover .clients-icon-svg,
-      &:focus .clients-icon-svg {
-        fill: $accent-color;
-      }
+  }
+  .clients-link-list {
+    &:hover .clients-icon-svg,
+    &:focus .clients-icon-svg {
+      fill: $accent-color;
     }
   }
 }
