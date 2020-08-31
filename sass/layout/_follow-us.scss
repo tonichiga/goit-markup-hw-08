@@ -96,3 +96,18 @@
     margin-right: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .follow-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+    flex-direction: unset;
+  }
+  .follow-us-form {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .follow-us-title {
+    text-align: unset;
+  }
+}
